@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Kanit', sans-serif;
+}
+
+:root {
+    --text-color: #292a2c;
+    --text-color2: #e6e6e6;
+    --h2-color: #161616;
+    --main-color: #1e62c6;
+    --second-color: #07306e;
+    --other-color: #d9dbde;
+
+    --p-h2: 1.7rem;
+    --p-font: 1.2rem;
+}
+
+body {
+    background-color: var(--other-color)
+}
+
+/* HEADER */
+
+/* nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--h2-color);
+}
+
+header ul{
+    background-color: var(--main-color);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    gap: 2rem;
+    font-size: var(--p-h2);
+}
+
+header ul li a{
+    color: var(--h2-color);
+}
+
+header ul li a:hover {
+    color: var(--text-color2);
+}
+
+
+h2 {
+    letter-spacing: 2px;
+} */
+
+
+
+.nav {
+    background-color: var(--main-color);
+    padding: 1rem;
+    border-bottom: 1px solid var(--h2-color);
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.nav-list li a {
+    color: var(--h2-color);
+    font-size: var(--p-h2);
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+
+/* INTRO */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+}
+
+.contenedor-intro {
+    margin-top: 100px;
+}
+
+.container-intro {
+    height: 500px;
+    display: flex;
+    margin: 50px 0;
+    gap: 2rem;
+    background-color: #1e62c6;
+    border-radius: 2rem;
+}
+
+.img-intro {
+    border-radius: 2rem;
+    width: 450px;
+    overflow: hidden;
+    object-fit: cover;
+    border: 1.5px solid var(--h2-color);
+}
+
+.titulo-intro {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.titulo-intro h2 {
+    font-size: var(--p-h2);
+}
+
+.titulo-intro p {
+    font-size: var(--p-font);
+}
+
+/* SOBRE MI */
+
+.cont-sobremi {
+    height: 180px;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50) ;
+}
+
+.sobremi {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.sobremi h2,
+.titulo-portfolio h2 {
+    text-decoration: underline;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 10px;
+    align-items: center;
+    height: 4rem;
+}
+
+.btn p {
+    font-weight: bold;
+}
+
+.btn button {
+    padding-inline: 5px;
+    background-color: var(--second-color);
+    border: 1px solid var(--text-color2);
+    color: var(--text-color2);
+    border-radius: 0.3rem;
+    height: 100%;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50) ;
+}
+
+.titulo-portfolio {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container-caja {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.caja {
+    background-color: var(--second-color);
+    border-radius: 2rem;
+    border: 1px solid var(--h2-color);
+    transition: 0.5s;
+    color: var(--text-color2);
+}
+
+.caja:hover {
+    transform: scale(1.1);
+}
+
+.caja img {
+    width: 400px;
+}
+
+.caja a {
+    color: var(--text-color2)
+}
+
+.caja a:hover {
+    color: #0cb6e9;
+}
+
+/* CONTACTO */
+
+.container-contacto {
+    width: 300px;
+}
+
+.contacto {
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    text-align: center;
+    margin-block: 50px;
+}
+
+.contacto h2 {
+    text-decoration: underline;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.icons a {
+    font-size: 3rem;
+    color: var(--other-color);
+    transition: 0.5s;
+}
+
+.icons a:hover {
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 1080px) {
+    .cont-sobremi,
+    .portfolio,
+    .contacto {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .icons a {
+        color: var(--second-color);
+    }
+
+}
+
+@media screen and (max-width: 1020px) {
+    .container-intro {
+        height: 300px;
+    }
+
+    .container-intro img {
+        width: 350px;
+    }
+
+    .cont-sobremi {
+        height: 220px;
+    }
+    .caja {
+        width: 300px;
+    }
+
+    .caja img {
+        width: 298px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .caja {
+        width: 250px;
+        border-radius: 1rem;
+    }
+
+    .caja h2 {
+        font-size: 1.3rem;
+    }
+
+    .caja p, .caja a {
+        font-size: 0.8rem;
+    }
+
+    .caja img {
+        width: 248px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .sobremi {
+        margin-block: 1rem;
+    }
+
+    .btn {
+        flex-wrap: wrap;
+    }
+
+    .container-caja {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    .btn-abrir {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    .abrir-menu,
+    .cerrar-menu {
+        width: 80px;
+        font-size: 1rem;
+        background-color: var(--main-color);
+        border-radius: 0.5rem;
+        display: block;
+    }
+
+    
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list li a {
+        font-size: 1.2rem;
+    }
+
+    .contenedor-intro {
+        margin: 0;
+    }
+
+    .portfolio {
+        margin-top: 10rem;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .nav-list li a {
+        font-size: 1rem;
+    }
+}
+
+
