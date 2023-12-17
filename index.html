@@ -3,102 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfolio - Mathi Schulz</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <title>Portfolio - Mathias Schulz</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
-    <header>
-        <div class="btn-abrir">
-            <button id="abrir" class="abrir-menu"><i class="bi bi-three-dots"></i></button>
-        </div>
 
-        <nav class="nav" id="nav">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
-            <ul class="nav-list">
-                <li><a href="#sobremi">Sobre mí <i class="bi bi-check-lg"></i></a></li>
-                <li><a href="#portfolio">Portfolio <i class="bi bi-check-lg"></i></a></li>
-                <li><a href="#contacto">Contacto <i class="bi bi-check-lg"></i></a></li>
+    <section class="layout">
+        <div class="navbar">
+            <ul>
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-            
-        </nav>
-    </header>  
+        </div>
 
-    <section>
-        <div class="container contenedor-intro">
 
-            <div class="container-intro">
+        <div class="leftSide">
+            <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=541130595709" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://instagram.com/mathischulz/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/Mathischulz" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+        </div>
 
-                <img class="img-intro" src="./img/imgperfil.jpeg" alt="imgperfil">
 
-                <div class="titulo-intro">
-                    <h2>Mathias Schulz</h2>
-                    <p>Soy de Argentina, Buenos aires. <br> Tengo 23 años y actualmente estoy aprendiendo sobre Desarrollo Web.</p>
+        <div class="main">
+            <div class="contenedor-img">
+                <img src="./img/fotoperfil.png" alt="fotoperfil">
+            </div>
 
+            <div class="contenedor-tit-txt">
+                <div class="titulo-main">
+                    <h1>Soy Mathias Schulz</h1>
+                </div>
+                <div class="txt-main">
+                    <p>
+                        Tengo 23 años y estoy estudiando Desarrollo Web. <br>
+                        <i class="bi bi-geo-alt-fill"></i>Argentina, Buenos aires.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section>
-    <div id="sobremi" class="container cont-sobremi">
-        <div class="sobremi">
-            <h2>Sobre Mí</h2>
-            <div class="caja-btn">
-
-                <div class="caja-txt">
-                    <p> Con muchas ganas de seguir aprendiendo programación ya que es un mundo de conocimiento y se pueden hacer miles de cosas, estoy dispuesto a adquirir todo tipo de aprendizaje para resolver problemas y mejorar en mis proyectos.</p>
-                </div>
-                <div class="btn">
-                    <p>SKILLS:</p>
-                    <button>HTML5</button><button>CSS3</button><button>SASS & SCSS</button><button>GIT & GITHUB</button><button>Diseño responsivo</button><button>Bootstrap</button><button>Visual Studio Code</button>
-                </div>
-            </div>
-                    
-    </div>
-</section>
+    </section>
 
     <section>
-        <div id="portfolio" class="container portfolio">
-
-            <div class="titulo-portfolio">
-                <h2>Portfolio</h2>
+        <div class="contenedor-sobremi">
+            <div id="sobremi" class="titulo-sobremi">
+                <h1>Sobre mí</h1>
+            </div>
+            <div class="txt-sobremi">
                 <p>
-                    Realice el curso de <b>Desarrollo Web en Coderhouse (2023)</b>, y estos son mis proyectos para emprendimientos.  </p>
+                    Realicé un curso de Desarrollo Web en <b>CoderHouse (2023)</b>, estoy dispuesto a adquirir conocimiento, aprender más sobre programación y solucionar problemas, ya que mi objetivo es llegar a considerarme Web Developer y trabajar. 
+                </p>
             </div>
-
-            <div class="container-caja">
-                <div class="caja">
-                    <h2>Soklean Shoes</h2>
-                    <img src="./img/imgsoklean.png" alt="paginasoklean">
-                    <p>El mejor cuidado para tus zapatillas.</p>
-                    <a href="https://sokleanshoes.netlify.app/" target="_blank">Visitar web <i class="bi bi-box-arrow-in-right"></i></a>
-                </div>
-                <div class="caja">
-                    <h2>Permer Carpintería</h2>
-                    <img src="./img/imgpermer.png" alt="paginapermer">
-                    <p>Alacenas, escritorios, mesas.</p>
-                    <a href="https://permercarpinteria.netlify.app/" target="_blank">Visitar web <i class="bi bi-box-arrow-in-right"></i></a>
-                </div>
+            <div class="skills">
+                <h1>Skills:</h1>
+                <ul class="lista-skills">
+                    <li class="skill">HTML5</li>
+                    <li class="skill">CSS3</li>
+                    <li class="skill">SASS & SCSS</li>
+                    <li class="skill">GIT & GITHUB</li>
+                    <li class="skill">Diseño responsivo</li>
+                    <li class="skill">Bootstrap</li>
+                </ul>
             </div>
-
         </div>
     </section>
 
     <section>
-        <div  id="contacto" class="container container-contacto">
-            <div class="contacto">
-                <h2>Contacto</h2>
-                <div class="icons">
-                    <a href="https://api.whatsapp.com/send?phone=541130595709" target="_blank"><i class="bi bi-whatsapp"  ></i></a>
-                    <a href="https://instagram.com/mathischulz/" target="_blank" ><i class="bi bi-instagram"></i></a>
-                    <a href="https://github.com/Mathischulz" target="_blank" ><i class="bi bi-github"></i></a>
-                </div>
+        <div class="contenedor-portfolio">
+            <div id="portfolio" class="titulo-portfolio">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="txt-portfolio">
+                <p>
+                    De momento estos son los proyectos que hice y subí a Netlify (hosting gratuito).
+                </p>
+            </div>
+        </div>
+        <div class="contenedor-cajas">
+            <div class="caja-soklean">
+                <h1>Soklean Shoes</h1>
+                <img src="./img/imgsoklean.png" alt="sokleanweb">
+                <p>
+                    El mejor cuidado para tus zapatillas.
+                </p>
+                <a href="https://sokleanshoes.netlify.app/" target="_blank">Visitar Web <i class="bi bi-box-arrow-in-right"></i></a>
+            </div>
+            <div class="caja-permer">
+                <h1>Permer Carpintería</h1>
+                <img src="./img/imgpermer.png" alt="permerweb">
+                <p>
+                    Alacenas, escritorios, mesas.
+                </p>
+                <a href="https://permercarpinteria.netlify.app/" target="_blank">Visitar web <i class="bi bi-box-arrow-in-right"></i></a>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div id="contacto" class="contenedor-contacto">
+            <ul class="contact">
+                <li><a href="https://api.whatsapp.com/send?phone=541130595709" target="_blank">+54-11-3059-5709 <i class="bi bi-whatsapp"></i></a></li>
+                <li><a href="https://instagram.com/mathischulz/" target="_blank">mathischulz <i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://github.com/Mathischulz" target="_blank">Mathischulz <i class="bi bi-github"></i></a></li>
+                <li><a href="mailto:mathiasschulz00@gmail.com">mathiasschulz00@gmail.com <i class="bi bi-envelope-at-fill"></i></a></li>
+                <li><a href="mailto:mathiasschulz00@icloud.com">mathiasschulz00@icloud.com <i class="bi bi-apple"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="./js/main.js"></script>
 </body>
