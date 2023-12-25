@@ -136,6 +136,23 @@ body {
     gap: 0.5rem;
 }
 
+.certif-img {
+     display: flex;
+     justify-content: center;
+     margin-block: 1rem;
+}
+
+.certif-img img {
+    width: 300px;
+    transition: 0.5s;
+}
+
+.certif-img img:hover {
+    transform: scale(1.1);
+}
+
+
+
 .titulo-sobremi {
     text-decoration: underline;
     color: var(--color-letra1);
