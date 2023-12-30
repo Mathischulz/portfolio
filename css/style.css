@@ -99,7 +99,7 @@ body {
 .main {
     display: flex;
     flex-direction: column-reverse;
-    margin: 0 2rem 0 1rem;
+    margin: 0 2rem 0 2rem;
 }
 
 .contenedor-img {
@@ -202,7 +202,7 @@ body {
     flex-flow: wrap;
 }
 
-.caja-permer, .caja-soklean {
+.caja-permer, .caja-soklean, .caja-tecnorimbo {
     background-color: var(--color-letra1);
     width: 350px;
     margin-top: 1.5rem;
@@ -211,25 +211,36 @@ body {
     border-radius: 1rem;
 }
 
+.caja-tecnorimbo {
+    margin-top: 0;
+}
+
+.caja-soklean img, 
+.caja-permer img,
+.caja-tecnorimbo img {
+    width: 100%
+}
+
 .caja-soklean h1,
-.caja-permer h1 {
+.caja-permer h1,
+.caja-tecnorimbo h1 {
     color: var(--second-color);
 }
 
 .contenedor-cajas p,
 .caja-permer a,
-.caja-soklean a {
+.caja-soklean a,
+.caja-tecnorimbo a {
     color: var(--second-color);
 }
 
+
 .caja-permer a:hover,
-.caja-soklean a:hover {
+.caja-soklean a:hover,
+.caja-tecnorimbo a:hover {
     color: #0ae0e0;
 }
 
-.caja-soklean img, .caja-permer img {
-    width: 100%
-}
 
 /*CONTACTO*/
 
@@ -284,9 +295,11 @@ body {
     }
 }
 
-@media screen and (max-width:830px) {
-    .caja-permer {
-        margin: 0 auto;
+@media screen and (max-width:820px) {
+    .caja-permer,
+    .caja-soklean,
+    .caja-tecnorimbo {
+        margin-top: 0;
     }
 }
 
